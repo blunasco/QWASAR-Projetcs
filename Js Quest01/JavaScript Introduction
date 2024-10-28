@@ -1,0 +1,47 @@
+/* = this is an assignment
+printing in javascript
+conditions in javascript
+functions in javascript: creating and calling
+loop in javascript: for, while, incrementation/decrementation 
+array: storing multiple values in one variable, getting the size
+*/
+
+var layer=2;  
+/*
+1) what are the inputs of the function?
+2) what are the output of the function?
+nothing
+printing and/or reutrning a value
+
+3) what is the function doing?
+*/
+
+function my_christmas_tree_layer(layer){ 
+    if (layer==1){
+    console.log("   *");
+    console.log("  ***");
+    console.log(" *****");
+    console.log("********");
+}
+ else if (layer == 2){
+    return ;
+    console.log("     *");
+    console.log("    ***");
+    console.log("   *****");
+    console.log("  ********");
+    console.log("   ****");
+    console.log("  *******");
+    console.log(" *********");
+    console.log("***********");
+}
+else {
+    console.log("Layer size (" + layer + ") is not implemented.")
+}
+}
+var index =0;
+var tree = [1, 2, 1, 2, 2];
+
+while (index < tree.length) {
+    my_christmas_tree_layer(tree[index]);
+    index += 1;
+}
